@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login SGE</title>
+	<title>Login LivCard</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
  <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
@@ -31,7 +31,7 @@
 <body>
 	
 	<div class="limiter">
-		<div class="container-login100" style="background-image: url('https://blog.safesst.com.br/wp-content/uploads/2017/09/125620-entregar-revisao-quinta-219-16h-entenda-agora-a-importancia-da-ergonomia-no-ambiente-de-trabalho.jpg');">
+		<div class="container-login100" style="background-image: url('https://static.wixstatic.com/media/51fd44_abd33239604841a6a9b7d5401e986be4~mv2.png/v1/fill/w_600,h_529,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/013.png');">
 			<div class="wrap-login100">
                <form id="form" method="POST" action="{{route('login')}}" class="login100-form validate-form">
                         @csrf
@@ -41,7 +41,7 @@
 					</span>
 
 					<span class="login100-form-title p-b-34 p-t-27">
-						Login SGE					</span>
+						Login LivCard					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Enter Email">
 						<input class="input100" type="text" id="email" type="email" name="email" placeholder="Email">
