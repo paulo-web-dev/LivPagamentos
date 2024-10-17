@@ -119,7 +119,7 @@
                     </li>
 
                     <li>
-                      <a href="{{route('form-usuario')}}">
+                      <a href="{{route('add-credito-transacao')}}">
                         <span class="sub-item">Adicionar Saldo</span>
                       </a>
                     </li>

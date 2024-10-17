@@ -83,6 +83,34 @@ class DashboardHome extends Controller
         ]);
     }
 
+    
+    public function formProduto(){
+  
+        
+          
+        return view('dashboard.form-produto', [
+           
+
+        ]);
+    }
+
+    public function cadProduto(Request $request){
+  
+        $produto = new Produtos();
+        $produto->nome = $request->nome;
+        $produto->valor = $request->valor;
+        $produto->quantidade_hora = $request->quantidade_hora;
+        if(isset($request->file)){
+            $photoname = $request->file->getClientOriginalName();
+            $produto->foto = $photoname;
+            $image = $request->file('file');
+            $destinationPath = public_path('fotos-produtos/');
+            $image->move($destinationPath, $photoname);
+           }
+
+        $produto->save();
+        return redirect()->route('produtos');
+    }
     public function cadTransacao(Request $request){
        
         $usuario = User::where('id', $request->usuario)->first();
