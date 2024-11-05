@@ -121,7 +121,11 @@
         </div>
 
 
-
+<br>
+<br>
+<br>
+<br>
+    @include('dashboard.footer')
     
     <script>
       $("#lineChart").sparkline([1002, 109, 120, 99, 110, 105, 115], {

@@ -123,6 +123,12 @@
                         <span class="sub-item">Adicionar Saldo</span>
                       </a>
                     </li>
+
+                     <li>
+                      <a href="{{route('form-produto')}}">
+                        <span class="sub-item">Adicionar Produto</span>
+                      </a>
+                    </li>
                   </ul>
                 </div>
               </li>
