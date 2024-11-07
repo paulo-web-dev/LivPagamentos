@@ -1,6 +1,13 @@
 
 
-<footer class="footer" style="margin-bottom:0">
+<footer class="footer" style=" position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa; /* ou qualquer outra cor */
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;">
           <div class="container-fluid d-flex justify-content-between">
             <nav class="pull-left">
               <ul class="nav">
