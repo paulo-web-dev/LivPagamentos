@@ -1,6 +1,6 @@
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<footer class="footer">
+
+<footer class="footer" style="margin-bottom:0">
           <div class="container-fluid d-flex justify-content-between">
             <nav class="pull-left">
               <ul class="nav">
