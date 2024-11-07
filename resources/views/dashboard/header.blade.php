@@ -48,7 +48,7 @@
         <div class="sidebar-logo">
           <!-- Logo Header -->
           <div class="logo-header" data-background-color="dark">
-            <a href="index.html" class="logo">
+            <a href="{{route('home')}}" class="logo">
               <img
                 src="https://static.wixstatic.com/media/51fd44_2e6bd207ce9041fe83f4448650661501~mv2.png/v1/fill/w_314,h_83,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/0001.png"
                 alt="navbar brand"
