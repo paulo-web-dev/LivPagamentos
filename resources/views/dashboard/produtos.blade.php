@@ -41,6 +41,7 @@
                             <th>Valor</th>
                             <th>Quantida/Hora</th>
                             <th>Data de Cadastro</th>
+                            <th>Excluir Produto</th>
                            
                           </tr>
                         </thead>
@@ -50,16 +51,18 @@
                             <th>Valor</th>
                             <th>Quantida/Hora</th>
                             <th>Data de Cadastro</th>
+                            <th>Excluir Produto</th>
                           </tr>
                         </tfoot>
                         <tbody>
-                        @foreach ($produtos as $produto )
+                    @foreach ($produtos as $produto )
                          <tr>
                             <td>{{$produto->nome}}</td>
                             <td>R${{$produto->valor}}</td>
                             <td>{{$produto->quantidade_hora}}</td>
                             <td>{{$produto->created_at}}</td>
-                           
+                            <td><a href="{{route('livcard-produtos-destroy', ['id' => $produto->id])}}">Excluir</a></td>
+
                           </tr>
                         @endforeach
                          

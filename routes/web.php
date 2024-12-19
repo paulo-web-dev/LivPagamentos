@@ -36,10 +36,11 @@ Route::post('/dashboard/cad/usuario', [DashboardHome::class, 'cadUsuario'])->nam
 //Rotas Painel Usuário LivCard
 Route::get('/livcard/home', [LivCard::class, 'home'])->name('livcard-home');
 Route::get('/livcard/produtos', [LivCard::class, 'produtos'])->name('livcard-produtos');
+Route::get('/livcard/produtos/destroy/{id}', [LivCard::class, 'produtosDestroy'])->name('livcard-produtos-destroy');
 Route::get('/livcard/minhas/transacoes', [LivCard::class, 'transacoes'])->name('livcard-transacoes');
 Route::get('/livcard/credito', [LivCard::class, 'credito'])->name('livcard-credito');
 Route::post('/livcard/adiciona/credito', [LivCard::class, 'Adicionarcredito'])->name('livcard-adicionar-credito');
-
+Route::get('/logout', [LivCard::class, 'logout'])->name('logout');
 Route::get('/', function () {
     return Inertia::render('Welcome', [
         'canLogin' => Route::has('login'),

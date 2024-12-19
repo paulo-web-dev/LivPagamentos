@@ -35,11 +35,12 @@
 
         <div class="form-group">
             <label for="quantidadeSelect">Valor de Crédito</label>
-            <select class="form-control" name="credito" id="quantidadeSelect">
-                @for ($i = 1; $i < 11; $i++)
-                    <option value="{{ $i*50 }}">R${{ $i*50 }},00</option>
-                @endfor
-            </select>
+        <select class="form-control" name="credito" id="quantidadeSelect">
+    @for ($i = 2; $i <= 10; $i++)
+        <option value="{{ $i * 50 }}">R${{ $i * 50 }},00</option>
+    @endfor
+</select>
+
         </div>
             <div class="form-group">
                 <label for="cpf_titular">CPF</label>

@@ -129,6 +129,12 @@
                         <span class="sub-item">Adicionar Produto</span>
                       </a>
                     </li>
+
+                     <li>
+                      <a href="{{route('logout')}}">
+                        <span class="sub-item">Logout</span>
+                      </a>
+                    </li>
                   </ul>
                 </div>
               </li>

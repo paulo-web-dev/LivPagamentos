@@ -91,11 +91,11 @@
                         <span class="sub-item">Home</span>
                       </a>
                     </li>
-                    <li>
+                    {{-- <li>
                       <a href="{{route('livcard-produtos')}}">
                         <span class="sub-item">Produtos</span>
                       </a>
-                    </li>
+                    </li> --}}
                       <li>
                       <a href="{{route('livcard-transacoes')}}">
                         <span class="sub-item">Minhas Transações</span>
@@ -106,7 +106,11 @@
                         <span class="sub-item">Adicionar Crédito</span>
                       </a>
                     </li>
-                    
+                    <li>
+                       <a href="{{route('logout')}}">
+                        <span class="sub-item">Logout</span>
+                      </a>
+                    </li>
                   </ul>
                 </div>
               </li>

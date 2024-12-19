@@ -24,7 +24,13 @@ class LivCard extends Controller
         ]);
 
     }
-
+    public function logout()
+    { 
+        
+        Auth::logout(); 
+        return redirect()->route('login');              
+        
+    }
         
     public function produtos(){
         $produtos = Produtos::all();
@@ -33,6 +39,16 @@ class LivCard extends Controller
             'produtos' => $produtos, 
         ]);
     }
+    public function produtosDestroy($id)
+    {
+        // Encontra o produto pelo ID e o exclui
+        $produto = Produtos::findOrFail($id);
+        $produto->delete();
+    
+        // Retorna para a página anterior com uma mensagem de sucesso
+        return back();
+    }
+    
 
 
     
