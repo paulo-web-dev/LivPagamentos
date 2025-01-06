@@ -111,8 +111,13 @@
                         
                           <tr>
 
-                        
+                        @if (isset($transacao->produto->nome))
+                            
                             <td class="text-end">{{$transacao->produto->nome}}</td>
+                            @else
+                            
+                            <td class="text-end">Produto Excluido</td>
+                        @endif
                             <td class="text-end">{{$transacao->quantidade}}</td>
                              
                             <td class="text-end">R${{$transacao->valor}}</td>
